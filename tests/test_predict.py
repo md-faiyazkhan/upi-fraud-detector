@@ -2,7 +2,6 @@
 Tests for the /predict endpoint.
 """
 
-
 def test_predict_returns_valid_response(client, sample_transaction):
     response = client.post("/predict", json=sample_transaction)
     assert response.status_code == 200

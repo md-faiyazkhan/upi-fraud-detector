@@ -11,7 +11,7 @@ from app.main import app
 @pytest.fixture(scope="module")
 def client():
     """FastAPI test client with lifespan events (startup) triggered."""
-    with TestClient(app) as test_client:
+    with TestClient(app, raise_server_exceptions=True) as test_client:
         yield test_client
 
 
