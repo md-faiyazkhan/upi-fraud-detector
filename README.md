@@ -4,7 +4,7 @@
 
 UPI Fraud Detector predicts the probability that a UPI transaction is fraudulent, converts that probability into a 0–100 risk score with a Low/Medium/High category, and explains every prediction using SHAP — turning a black-box classifier into an auditable decision-support tool.
 
-![Dashboard Screenshot](docs/screenshots/overview.png)
+![Dashboard Screenshot](docs/screenshots/prediction.png)
 
 ---
 
@@ -201,6 +201,10 @@ upi-fraud-detector/
 ├── docs/
 │   ├── architecture.md
 │   └── screenshots/
+│       ├── overview.png
+│       ├── analytics.png
+│       ├── prediction.png
+│       └── api_docs.png
 │
 ├── tests/
 │   ├── __init__.py
